@@ -94,7 +94,7 @@ export const AVAILABLE_VOICES: Voice[] = [
   { id: 'IKne3meq5aSn9XLyUdCD', name: 'Charlie', description: 'Deep, Confident, Energetic' },
 ];
 
-// Cost estimates
+// Cost estimates (Veo 3.1 Fast tier)
 export const COST_PER_SECOND_720P = 0.15;
-export const COST_PER_SECOND_1080P = 0.40;
+export const COST_PER_SECOND_1080P = 0.15;  // Fast tier is same price for both
 export const COST_PER_CHARACTER_VOICE = 0.00003;

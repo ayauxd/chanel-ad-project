@@ -120,7 +120,7 @@ class VeoVideoGenerator:
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not found in environment")
         self.client = genai.Client(api_key=self.api_key)
-        self.model = "veo-3.1-generate-preview"
+        self.model = "veo-3.1-fast-generate-preview"  # Fast tier: $0.15/sec vs $0.40/sec
 
     def generate_shot(self, shot: Shot, output_path: Path) -> Path:
         """Generate a single video shot using Veo 3.1."""

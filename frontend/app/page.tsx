@@ -166,7 +166,7 @@ export default function AdGenerator() {
             </TabsList>
 
             <ScrollArea className="flex-1">
-              <TabsContent value="shots" className="p-4 m-0">
+              <TabsContent value="shots" className="p-4 m-0 data-[state=inactive]:hidden">
                 {selectedShot ? (
                   <ShotEditor shot={selectedShot} />
                 ) : (
@@ -176,7 +176,7 @@ export default function AdGenerator() {
                 )}
               </TabsContent>
 
-              <TabsContent value="voice" className="p-4 m-0">
+              <TabsContent value="voice" className="p-4 m-0 data-[state=inactive]:hidden">
                 <VoiceStudio />
               </TabsContent>
             </ScrollArea>
